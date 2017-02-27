@@ -1,0 +1,57 @@
+{
+  "author" : "Roy, Nikolas, Sergi, Florian, Moriah, Aby",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "cmd '",
+      "name" : "Run...",
+      "identifier" : "run"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Go To",
+      "identifier" : "goto"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Insert",
+      "identifier" : "insert"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Create",
+      "identifier" : "create"
+    },
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Apply",
+      "identifier" : "apply"
+    }
+  ],
+  "menu": {
+    "title" : "🏃🏿 Runner",
+    "items": [
+      "run",
+      "-",
+      "goto",
+      "insert",
+      "create",
+      "apply"
+    ]
+  },
+  "identifier" : "com.sketchrunner.Runner",
+  "version" : "0.7.2",
+  "description" : "Speed up your Sketch workflow",
+  "authorEmail" : "hello@sketchrunner.com",
+  "name" : "🏃🏿 Runner",
+  "disableCocoaScriptPreprocessor" : true
+}
