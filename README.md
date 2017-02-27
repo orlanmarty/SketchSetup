@@ -1,6 +1,6 @@
 # My Sketch Plugins
 
-A list of some of the plugins I use daily when using [Sketch](https://www.sketchapp.com).
+A list of some of the plugins I use daily with [Sketch](https://www.sketchapp.com).
 
 ## To get the plugins, open your terminal app and paste the following code.
 
