@@ -1,6 +1,0 @@
-framework module Instabar {
-  umbrella header "Instabar.h"
-
-  export *
-  module * { export * }
-}

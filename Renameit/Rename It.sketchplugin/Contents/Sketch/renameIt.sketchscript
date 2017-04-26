@@ -92,19 +92,25 @@ function createDialog()
 {
 	var alert = COSAlertWindow.new();
 
-	function createTextFieldWithLavel(label,defaultValue) {
+	function createTextFieldWithLabel(label,defaultValue) {
 			alert.addTextLabelWithValue(label);
 			alert.addTextFieldWithValue(defaultValue);
 	}
 
 	alert.setMessageText("Rename Selected Layers");
-	alert.setInformativeText("Helpers: \nNumber Sequence: %N or %n \nDimensions: %W %H \nMove Original Layer Name: *");
+	alert.setInformativeText("Helpers: \nNumber Sequence: %N Descending | %n Ascending \nDimensions: %W %H \nMove Original Layer Name: *");
 
 	// Name
-	createTextFieldWithLavel("Name:","");
+	createTextFieldWithLabel("Name:","");
+	var firstField = alert.viewAtIndex(1)
 
 	// Interator
-	createTextFieldWithLavel("Starts Number Sequence From:","1");
+	createTextFieldWithLabel("Starts Number Sequence From:","1");
+	var secondField = alert.viewAtIndex(3)
+
+	// Set first responder
+	alert.alert().window().setInitialFirstResponder(firstField)
+	firstField.setNextKeyView(secondField)
 
 	// Actions buttons.
 	alert.addButtonWithTitle('OK');
