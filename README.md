@@ -8,6 +8,12 @@ A list of some of the plugins I use daily with [Sketch](https://www.sketchapp.co
 	
 	$ git clone https://github.com/orlanmarty/SketchSetup.git	
 
+## For updates, do the following.
+
+	$ cd Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/MySketchPlugins
+	
+	$ git pull	
+
 Note: Must be using MacOS Sierra to use the path above.
 
 ## Plugins
@@ -18,4 +24,3 @@ Note: Must be using MacOS Sierra to use the path above.
 - Sketch Runner
 - Sketch Measure
 - SVGO Compressor
-- UnSplashIt
