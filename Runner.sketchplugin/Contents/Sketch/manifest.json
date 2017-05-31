@@ -6,67 +6,82 @@
       "handler" : "onRun",
       "shortcut" : "cmd '",
       "name" : "Run...",
-      "identifier" : "run"
+      "identifier" : "run",
+      "icon" : "icons/run.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "cmd shift '",
       "name" : "Run Last Action",
-      "identifier" : "runLast"
+      "identifier" : "runLast",
+      "icon" : "icons/run.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "",
       "name" : "Go To",
-      "identifier" : "goto"
+      "identifier" : "goto",
+      "icon" : "icons/goto.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "",
       "name" : "Insert",
-      "identifier" : "insert"
+      "identifier" : "insert",
+      "icon" : "icons/insert.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "",
       "name" : "Create",
-      "identifier" : "create"
+      "identifier" : "create",
+      "icon" : "icons/create.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "",
       "name" : "Apply",
-      "identifier" : "apply"
+      "identifier" : "apply",
+      "icon" : "icons/apply.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "",
       "name" : "Install",
-      "identifier" : "install"
+      "identifier" : "install",
+      "icon" : "icons/install.png"
     },
     {
       "script" : "script.js",
       "handler" : "onRun",
       "shortcut" : "",
-      "name" : "Check For Plugin Updates...",
-      "identifier" : "updateAll",
-      "description" : "Instantly update all your plugins.",
+      "name" : "Customize Toolbar Menu...",
+      "identifier" : "customizeToolbar",
+      "description" : "Customize your Sketch Toolbar by adding plugin actions",
       "icon" : "icons/icon-runnerLogo.png"
     },
     {
-    "script": "script.js",
-    "handlers": {
-      "actions": {
-        "Startup" : "onStart"
+      "script": "script.js",
+      "handlers": {
+        "actions": {
+          "Startup" : "onStart"
+        }
+      }
+    },
+    {
+      "script": "script.js",
+      "handlers": {
+        "actions": {
+          "OpenDocument" : "onDocOpen"
+        }
       }
     }
-  }
   ],
   "menu": {
     "title" : "🏃🏿 Runner",
@@ -82,9 +97,12 @@
     ]
   },
   "identifier" : "com.sketchrunner.Runner",
-  "version" : "0.9",
+  "version" : "0.9.1",
   "description" : "Speed up your Sketch workflow",
   "authorEmail" : "hello@sketchrunner.com",
   "name" : "🏃🏿 Runner",
+  "appcastURL" : "https://api.sketchrunner.com/releasenotes.html",
+  "versionCheckURL" : "https://api.sketchrunner.com/versioncheck.json",
+  "downloadPluginURL" : "https://api.sketchrunner.com/Runner.zip",
   "disableCocoaScriptPreprocessor" : true
 }

@@ -5,8 +5,13 @@ var onRun = function(context) {
 }
 var onStart = function(context) {
 	lf(context, function() {
-		SketchRunner.startRunner();
+		SketchRunner.startRunner(context);
 	});
+}
+var onDocOpen = function(context) {
+	lf(context, function() {
+		SketchRunner.configureForDocument(context);
+	})
 }
 var onRunAction = function(context) {
 	var command = customCommands[context.command.identifier()];
