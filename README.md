@@ -10,7 +10,7 @@ A list of some of the plugins I use daily with [Sketch](https://www.sketchapp.co
 
 ## For updates, do the following.
 
-	$ cd Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/MySketchPlugins
+	$ cd Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/SketchSetup
 	
 	$ git pull	
 
