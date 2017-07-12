@@ -1,5 +1,5 @@
 {
-  "author" : "Roy, Nikolas, Sergi, Florian, Moriah, Aby",
+  "author" : "Roy, Nikolas, Sergi, Hussain",
   "commands" : [
     {
       "script" : "script.js",
@@ -97,12 +97,12 @@
     ]
   },
   "identifier" : "com.sketchrunner.Runner",
-  "version" : "0.9.1",
+  "version" : "0.9.2",
   "description" : "Speed up your Sketch workflow",
   "authorEmail" : "hello@sketchrunner.com",
   "name" : "🏃🏿 Runner",
-  "appcastURL" : "https://api.sketchrunner.com/releasenotes.html",
-  "versionCheckURL" : "https://api.sketchrunner.com/versioncheck.json",
-  "downloadPluginURL" : "https://api.sketchrunner.com/Runner.zip",
-  "disableCocoaScriptPreprocessor" : true
+  "versionCheckURL" : "https://sketchrunner.github.io/runner-info/versioncheck.json",
+  "downloadPluginURL" : "https://sketchrunner.github.io/runner-info/Runner.zip",
+  "disableCocoaScriptPreprocessor" : true,
+  "appcast" : "https://sketchrunner.github.io/runner-info/appcast.xml"
 }
