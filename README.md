@@ -22,7 +22,9 @@ A list of some of the plugins I use daily with [Sketch](https://www.sketchapp.co
 - [Artboard Manager](https://github.com/bomberstudios/artboard-manager) - Automatically organizes your artboards like a boss
 - [Compo](https://github.com/romashamin/compo-sketch) - Turn a text into a button (with background) with one command
 - [Content Generator](https://github.com/timuric/Content-generator-sketch-plugin) - From Lorem Ipsum to Faces
+- [Magic Mirror](https://magicsketch.io/mirror/) - create mockups in seconds
 - [Runner](http://sketchrunner.com/) - Spotlight, but for Sketch
 - [RenameIt](https://github.com/rodi01/RenameIt) - Select a layer or multiple and change its name in a few clicks
 - [Sketch Measure](http://utom.design/measure/) - Specs made easy
+- [Stark](https://github.com/stark-contrast/stark-sketch-plugin) - Ensure your design is accessible and high contrast for every type of color blindness
 - [SVGO Compressor](https://github.com/BohemianCoding/svgo-compressor) - Cleans up your SVGs 
