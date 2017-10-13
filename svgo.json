@@ -4,12 +4,6 @@
   "indent": 2,
   "plugins": [
     {
-      "name": "cleanupAttrs"
-    },
-    {
-      "name": "cleanupEnableBackground"
-    },
-    {
       "name": "cleanupIDs"
     },
     {
@@ -20,6 +14,9 @@
     },
     {
       "name": "collapseGroups"
+    },
+    {
+      "name": "convertColors"
     },
     {
       "name": "convertStyleToAttrs"
