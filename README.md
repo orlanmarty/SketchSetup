@@ -14,13 +14,13 @@ A list of some of the plugins I use daily with [Sketch](https://www.sketchapp.co
 	
 	$ git pull	
 
-Note: Must be using MacOS Sierra to use the path above.
+**Note**: Must be using MacOS Sierra to use the path above.
 
 ## Plugins
 
-- Compo
-- Navigate Artboards
-- RenameIt
-- Sketch Runner
-- Sketch Measure
-- SVGO Compressor
+- [Alembic](https://alembicforsketch.com/) - Extract a color palette from Sketch images
+- [Runner](http://sketchrunner.com/) - Spotlight, but for Sketch
+- [RenameIt](https://github.com/rodi01/RenameIt) - Select a layer or multiple and change its name in a few clicks
+- [Compo](https://github.com/romashamin/compo-sketch) - Turn a text into a button (with background) with one command
+- [Sketch Measure](http://utom.design/measure/) - Specs made easy.
+- [SVGO Compressor](https://github.com/BohemianCoding/svgo-compressor) - Cleans up your SVGs 
