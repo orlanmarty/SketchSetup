@@ -1,0 +1,68 @@
+{
+  "name": "Paddy",
+  "description": "Automated padding, spacing and alignment for your Sketch layers",
+  "author": "David Williames",
+  "homepage": "https://github.com/DWilliames/paddy-sketch-plugin",
+  "appcast": "https://raw.githubusercontent.com/DWilliames/paddy-sketch-plugin/master/.appcast.xml",
+  "version": "1.0.7",
+  "identifier": "com.davidwilliames.sketch-plugin.paddy",
+  "compatibleVersion": 47,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Enter padding for selection",
+      "identifier": "promptToApplyPadding",
+      "shortcut": "control alt p",
+      "script": "main.js",
+      "handler": "promptToApplyPadding",
+      "description": "Enter padding amount to the currently selected layers",
+      "icon": "Icons/padding.png"
+    },
+    {
+      "name": "Imply padding for selection",
+      "identifier": "autoApplyPadding",
+      "shortcut": "command shift p",
+      "script": "main.js",
+      "handler": "autoApplyPadding",
+      "description": "Apply implied padding to the currently selected layers",
+      "icon": "Icons/padding.png"
+    },
+    {
+      "name": "Spacing for selection",
+      "identifier": "applySpacing",
+      "shortcut": "control alt command p",
+      "script": "main.js",
+      "handler": "applySpacing",
+      "description": "Apply spacing to the currently selected groups",
+      "icon": "Icons/spacing.png"
+    },
+    {
+      "name": "Enable / disable automatic updating",
+      "identifier": "toggleAutomaticUpdating",
+      "script": "main.js",
+      "handler": "toggleAutomaticUpdating",
+      "description": "Toggle automated updating for Paddy",
+      "icon": "Icons/spacing.png"
+    },
+    {
+      "script":"main.js",
+      "handlers": {
+        "actions": {
+            "SelectionChanged.finish": "selectionChanged",
+            "TextChanged.finish": "textChanged",
+            "ConvertSymbolOrDetachInstances": "detachInstance"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "items": [
+      "promptToApplyPadding",
+      "autoApplyPadding",
+      "-",
+      "applySpacing",
+      "-",
+      "toggleAutomaticUpdating"
+    ]
+  }
+}

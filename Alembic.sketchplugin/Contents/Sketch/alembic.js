@@ -86,6 +86,10 @@ function onRun(context) {
         var clipboard = NSPasteboard.generalPasteboard();
         clipboard.clearContents();
         clipboard.setString_forType_(data.color, NSStringPboardType);
+      } else if (data.type == "document") {
+        var documentAssets = context.document.documentData().assets();
+        documentAssets.addColor(MSImmutableColor.colorWithSVGString(data.color).newMutableCounterpart());
+        NSApp.delegate().refreshCurrentDocument();
       }
     })
   })
@@ -124,12 +128,7 @@ var onSelectionChanged = function(context) {
     var webView = panel.contentView().subviews()[1];
     var windowObject = webView.windowScriptObject();
 
-    if (base64 == undefined) {
-      minimizePanel(panel);
-      windowObject.evaluateWebScript("emptyState()");
-    } else {
-      expandPanel(panel);
-      windowObject.evaluateWebScript("update('" + base64 + "')");
-    }
+    expandPanel(panel);
+    windowObject.evaluateWebScript(base64 == undefined ? null : "update('" + base64 + "')");
   }
 };

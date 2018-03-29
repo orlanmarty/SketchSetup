@@ -1,0 +1,54 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "identifier": "com.taptap.ninja.rename-it",
+  "homepage": "http://rodi01.github.io/RenameIt/",
+  "commands": [
+    {
+      "name": "Rename Selected Layers",
+      "identifier": "renameit.rename",
+      "shortcut": "ctrl cmd r",
+      "description": "Rename Selected layer(s) or artboard(s) all at once.",
+      "icon": "renameit_ic.png",
+      "script": "commandRenameLayer.js"
+    },
+    {
+      "name": "Find and Replace Layers/Artboards Names",
+      "identifier": "renameit.find",
+      "script": "commandFindReplace.js",
+      "shortcut": "ctrl option cmd r",
+      "description": "Find and replace text on selected layer(s) and artboard(s) names.",
+      "icon": "find_replace_ic.png"
+    },
+    {
+      "name": "Rename Selected Artboards",
+      "identifier": "renameit.renameArtboard",
+      "script": "commandRenameArtboard.js",
+      "shortcut": "shift ctrl option r",
+      "description": "Rename Selected artboard(s) at the root of the currently selected item.",
+      "icon": "renameit_ic.png"
+    },
+    {
+      "name": "Settings",
+      "identifier": "renameit.settings",
+      "script": "commandSettings.js",
+      "description": "Rename it settings."
+    }
+  ],
+  "menu": {
+    "title": "Rename It",
+    "items": [
+      "renameit.rename",
+      "renameit.renameArtboard",
+      "renameit.find",
+      "-",
+      "renameit.settings"
+    ]
+  },
+  "version": "3.7.3",
+  "description": "Keep your Sketch files organized, batch rename layers and artboards.",
+  "name": "Rename-It",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/rodi01/RenameIt/master/.appcast.xml",
+  "author": "Rodrigo Soares"
+}

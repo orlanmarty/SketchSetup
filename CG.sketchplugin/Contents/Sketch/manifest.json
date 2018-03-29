@@ -1,7 +1,7 @@
 {
   "name" : "Content Generator",
   "identifier" : "com.sketchapp.tcarpeev.contentgenerator",
-  "version" : "1.1",
+  "version" : "1.2",
   "appcast" : "https://raw.githubusercontent.com/timuric/Content-generator-sketch-plugin/master/appcast",
   "description" : "Content generator allows you quickly create dummy data such as avatars, names, geo location data etc.",
   "authorEmail" : "timuric@gmail.com",
@@ -20,6 +20,13 @@
       "shortcut" : "",
       "name" : "Flickr",
       "identifier" : "flickr"
+    },
+    {
+      "script" : "Images/Ig Keywords.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Instagram",
+      "identifier" : "insta"
     },
     {
       "script" : "Persona/Photos/Female.js",
@@ -265,7 +272,7 @@
       {
         "title": "Images",
         "items": [
-          "custom-images", "flickr", "rad-faces"
+          "custom-images", "flickr", "insta"
         ]
       },
       {
