@@ -1,0 +1,20 @@
+{
+  "name": "Framer Pasteboard",
+  "author": "Framer, B.V.",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "identifier": "com.framer.pasteboard",
+  "version": "0.1.1",
+  "commands": [
+    {
+      "handlers": {
+        "actions": {
+          "OpenDocument": "onOpenDocument"
+        }
+      },
+      "script": "plugin.js"
+    }
+  ],
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
